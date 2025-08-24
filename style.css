@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+background-color: gray;
+display: flex;
+justify-content: space-between;
+padding: 15px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+}
+header ul li{
+    width: 100%;
+    text-align: center;
+    line-height: 3;
+    margin: 0 5px;
+    border-bottom: 1px solid black;
+
+}
+header a{
+color: black;
+text-decoration: none;
+}
+
+.pdf {
+    width: 90%;
+    height: 670px;
+    overflow: hidden;
+}
+
+.eathe{
+    width: 90%;
+    height: 670px;
+    display: block;
+    animation:move 3000ms linear ;
+}
+
+@keyframes move{
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+    50%{
+        scale: 3;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.eathe{
+    /* text-align: center; */
+    width: 90%;
+    height: 670px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+main {
+    background-color: gray;
+    /* text-align: center; */
+}
+
+article{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+
+article h1{
+    background-color: black;
+    color: white;
+    border-radius:20%;
+    width: 40%;
+    margin: 0px auto;
+}
+
+article p{
+    padding: 30px 0;
+}
+
+.picture{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 10px;
+    background-color: black;
+
+}
+
+.picture div{
+    background-color: beige;
+    width: calc((100% - 12px)/3);
+}
+
+#form1 {
+    text-align: center;
+}
+
+#form1 input,textarea{
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+}
+#form1 label{
+    display: block;
+    margin: 30px 0;
+}
+
+#score div{
+ background-color: aliceblue;
+ border: 1px solid;
+ padding: 10px;
+ margin:10px auto;
+
+}
+
+.TOP {
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+    background-color: black;
+    padding: 10px 0px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.TOP:hover{
+    background-color: red;
+}
+.tarou{
+    background-color: black;
+    font-size: 10px;
+    color: white;
+    padding: 10px 0;
+    letter-spacing: 10px;
+}
+
+footer {
+    text-align: center;
+
+}
+
+@media(max-width:390px){
+    header{
+        flex-direction: column;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    header ul{
+        width: 100%;
+    }
+
+    header li{
+        font-size: 10px;
+    }
+
+    .eathe{
+        width: 100%;
+        height: 250px;
+    }
+
+    article{
+        width: 100%;
+        padding: 10px;
+    }
+
+    article h1{
+          width: 100%;
+    }
+    article p{
+        font-size: 10px;
+    }
+    
+    .picture div{
+        width: 100%;
+    }
+    .picture p{
+        padding: 0;
+    }
+
+    .picture img{
+        width: 100%;
+
+    }
+
+    #score p{
+        padding: 10px;
+    }
+
+    #score div{
+        width: 100%;
+    }
+    
+    .form1{
+        width: 60%;
+        font-size: 10px;
+        margin: 20px auto;
+        border-radius: 30px;
+    }
+
+    .tarou{
+        letter-spacing: 3px;
+    }
+
+
+
+}
+
